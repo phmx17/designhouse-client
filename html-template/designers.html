@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <title>DesignHouse</title>
+
+        <link rel="stylesheet" href="assets/lib/fontawesome/css/all.min.css" />
+        <!-- <script defer src="assets/lib/fontawesome/js/all.min.js"></script> -->
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <!-- Favicon -->
+        <link rel="shortcut icon" type="image/x-icon" href="" />
+    </head>
+    <body>
+        <!-- Start Header -->
+        <header class="fixed-topx">
+            <nav class="navbar navbar-expand-lg navbar-dark align-items-center">
+                <a
+                    class="navbar-brand text-uppercase fw-500"
+                    href="#"
+                    title="Project Name"
+                    >DesignHouse</a
+                >
+                <button
+                    class="navbar-toggler mr-auto"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbar"
+                    aria-controls="navbar"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav font-14 fw-300">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#" title="Shots">Shots</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" title="Designers"
+                                >Designers</a
+                            >
+                        </li>
+                    </ul>
+                    <div class="header-search">
+                        <form action="" method="">
+                            <div class="form-group">
+                                <input
+                                    type="text"
+                                    autocomplete="OFF"
+                                    name="search"
+                                    class="form-control text-white font-14 fw-300"
+                                    placeholder="Search and hit enter..."
+                                />
+                                <div class="search-icon text-white">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div
+                        class="upload-shot white-path font-14 fw-500 text-uppercase mr-auto"
+                    >
+                        <a href="#" class="primary-bg-color text-white">
+                            <i class="fas fa-cloud-upload-alt"></i> Upload
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Before Login -->
+                <ul class="before-login font-14 fw-300 text-uppercase d-none">
+                    <li>
+                        <a href="#">Sign up</a>
+                    </li>
+                    <li>
+                        <a href="#">Sign in</a>
+                    </li>
+                </ul>
+                <!-- End Before Login -->
+
+                <!-- After Login -->
+                <ul class="author-page white-path">
+                    <!-- Profile Dropdown -->
+                    <li class="dropdown">
+                        <a
+                            href="#"
+                            class="dropdown-toggle text-white"
+                            id="userDropdown"
+                            role="button"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                        >
+                            <img
+                                class="user-thumb"
+                                src="assets/images/profile.png"
+                                alt="Neba Funwi-Gabga"
+                            />
+                            <div class="usr-info">
+                                <span class="user-name font-14 fw-500"
+                                    >John Doe</span
+                                >
+                                <span class="user-deg font-10 fw-300"
+                                    >Code Coffee Code</span
+                                >
+                                <span class="down-chevron">
+                                    <i class="fa fa-angle-down"></i>
+                                </span>
+                            </div>
+                        </a>
+                        <div
+                            class="dropdown-menu user-dropdown font-14 fw-500"
+                            aria-labelledby="userDropdown"
+                        >
+                            <div class="dropdown-title-group font-12 fw-500">
+                                <span class="dropdown-title text-uppercase"
+                                    >Your Account</span
+                                >
+                            </div>
+                            <a
+                                class="dropdown-item mt-28"
+                                href="#"
+                                title="Profile"
+                            >
+                                <i class="fa fa-user"></i>
+                                Profile
+                            </a>
+                            <a class="dropdown-item" href="#" title="Setting">
+                                <i class="fa fa-cogs"></i>
+                                Setting
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#" title="Sign Out">
+                                <i class="fa fa-lock"></i>
+                                Sign Out
+                            </a>
+                        </div>
+                    </li>
+                    <!-- End Profile Dropdown -->
+                </ul>
+                <!-- End After Login -->
+            </nav>
+        </header>
+        <!-- End Header -->
+
+        <!-- Start Wrapper -->
+        <div class="wrapper">
+            <!-- Search Filters Section -->
+            <section class="filter-search-section">
+                <div class="container-fluid mb-4">
+                    <div class="row">
+                        <!-- SEARCH FILTERS -->
+                        <div class="col-md-3">
+                            <div class="card text-white bg-secondary">
+                                <div class="card-header">
+                                    SEARCH SCRAMBBBLERS
+                                </div>
+                                <div class="card-body">
+                                    <div class="form-group mb-2">
+                                        <label
+                                            class="text-uppercase font-14 fw-500"
+                                            >SEARCH BY LOCATION</label
+                                        >
+                                        <input
+                                            type="text"
+                                            name="skills"
+                                            class="form-control form-control-lg white-bg-color font-14 fw-300"
+                                            placeholder="Enter city..."
+                                        />
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        within x km
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        Place skills
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- SEARCH RESULTS -->
+                        <div class="col-md-9">
+                            <!-- Section Designers -->
+                            <section class="all-designers">
+                                <!-- Filters -->
+                                <div class="designers-meta white-bg-color">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-3">
+                                            <select
+                                                class="custom-select font-14 fw-300"
+                                            >
+                                                <option selected
+                                                    >Designers & Teams</option
+                                                >
+                                                <option value="1"
+                                                    >Designers</option
+                                                >
+                                                <option value="2"
+                                                    >Design teams</option
+                                                >
+                                            </select>
+                                        </div>
+                                        <div class="col-md-9 text-right">
+                                            <ul
+                                                class="sort-list hover-state active-state font-14 fw-400"
+                                            >
+                                                <li>Sort:</li>
+                                                <li>
+                                                    <a
+                                                        class="active"
+                                                        href="#"
+                                                        title="Trending"
+                                                        >Trending</a
+                                                    >
+                                                </li>
+                                                <li>-</li>
+                                                <li>
+                                                    <a
+                                                        href="#"
+                                                        title="Followers"
+                                                        >Followers</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--/ end filters -->
+                                <ul class="designer-listing">
+                                    <li>
+                                        <div class="row align-items-center">
+                                            <div class="col-lg-4 pr-0 clearfix">
+                                                <div
+                                                    class="designer-img float-left"
+                                                >
+                                                    <img
+                                                        src="assets/images/profile.png"
+                                                        alt="Neba"
+                                                    />
+                                                </div>
+                                                <div class="designer-meta">
+                                                    <div
+                                                        class="designer-title hover-state"
+                                                    >
+                                                        <a
+                                                            class="font-16 fw-500"
+                                                            href="#"
+                                                            title="Neba Funwi-Gabga"
+                                                            >Neba Funwi-Gabga</a
+                                                        >
+                                                    </div>
+                                                    <div
+                                                        class="designer-address font-14 fw-300 mt-1"
+                                                    >
+                                                        San Francisco, CA /
+                                                        <a href="#"
+                                                            ><strong
+                                                                >115,000</strong
+                                                            >
+                                                            followers</a
+                                                        >
+                                                    </div>
+                                                    <ul
+                                                        class="icon-list white-path mt-2"
+                                                    >
+                                                        <li>
+                                                            <a
+                                                                class="secondary-bg-color text-white font-12"
+                                                                href="#"
+                                                            >
+                                                                <i
+                                                                    class="fas fa-plus"
+                                                                ></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a
+                                                                class="secondary-bg-color text-white active font-12"
+                                                                href="#"
+                                                            >
+                                                                <i
+                                                                    class="fas fa-share"
+                                                                ></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a
+                                                                class="primary-bg-color text-white font-12"
+                                                                href="#"
+                                                            >
+                                                                <i
+                                                                    class="fas fa-envelope"
+                                                                ></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a
+                                                                class="secondary-bg-color text-white font-12"
+                                                                href="#"
+                                                            >
+                                                                <i
+                                                                    class="fas fa-list"
+                                                                ></i>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <p
+                                                        class="font-13 fw-300 mt-1"
+                                                    >
+                                                        Agency in SF, NY, LA and
+                                                        Iceland. Clients:
+                                                        Google, Reuters, Apple,
+                                                        Facebook, Uber, ESPN,
+                                                        Red Bull, Samsung,
+                                                        Airbnb, V...
+                                                    </p>
+                                                    <ul
+                                                        class="tags-list font-12 fw-300 mt-1 hover-state"
+                                                    >
+                                                        <li>
+                                                            <a
+                                                                href="#"
+                                                                title="illustration"
+                                                                >illustration</a
+                                                            >
+                                                        </li>
+                                                        ,
+                                                        <li>
+                                                            <a
+                                                                href="#"
+                                                                title="logo"
+                                                                >logo</a
+                                                            >
+                                                        </li>
+                                                        ,
+                                                        <li>
+                                                            <a
+                                                                href="#"
+                                                                title="icon"
+                                                                >icon</a
+                                                            >
+                                                        </li>
+                                                        ,
+                                                        <li>
+                                                            <a
+                                                                href="#"
+                                                                title="strategy"
+                                                                >strategy</a
+                                                            >
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                            <!-- Author Cards -->
+                                            <div class="col-lg-8">
+                                                <div class="card-slide">
+                                                    <!-- ITEM -->
+                                                    <div class="card-outer">
+                                                        <div class="card">
+                                                            <a href="#">
+                                                                <img
+                                                                    class="card-img-top"
+                                                                    src="http://via.placeholder.com/350x250"
+                                                                    alt="louies secondary marks"
+                                                                />
+                                                            </a>
+                                                            <div
+                                                                class="card-body py-2 text-center"
+                                                            >
+                                                                <h5
+                                                                    class="card-title hover-state font-14 fw-500 mb-2"
+                                                                >
+                                                                    <a
+                                                                        class="title"
+                                                                        href="#"
+                                                                    >
+                                                                        <span
+                                                                            >Shot
+                                                                            Title</span
+                                                                        >
+                                                                    </a>
+                                                                </h5>
+                                                                <p
+                                                                    class="card-text font-12 fw-400"
+                                                                >
+                                                                    <a href="#">
+                                                                        <span
+                                                                            >8
+                                                                            hrs
+                                                                            ago</span
+                                                                        >
+                                                                    </a>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- ITEM -->
+                                                    <div class="card-outer">
+                                                        <div class="card">
+                                                            <a href="#">
+                                                                <img
+                                                                    class="card-img-top"
+                                                                    src="http://via.placeholder.com/350x250"
+                                                                    alt="louies secondary marks"
+                                                                />
+                                                            </a>
+                                                            <div
+                                                                class="card-body py-2 text-center"
+                                                            >
+                                                                <h5
+                                                                    class="card-title hover-state font-14 fw-500 mb-2"
+                                                                >
+                                                                    <a
+                                                                        class="title"
+                                                                        href="#"
+                                                                    >
+                                                                        <span
+                                                                            >Shot
+                                                                            Title</span
+                                                                        >
+                                                                    </a>
+                                                                </h5>
+                                                                <p
+                                                                    class="card-text font-12 fw-400"
+                                                                >
+                                                                    <a href="#">
+                                                                        <span
+                                                                            >8
+                                                                            hrs
+                                                                            ago</span
+                                                                        >
+                                                                    </a>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- ITEM -->
+                                                    <div class="card-outer">
+                                                        <div class="card">
+                                                            <a href="#">
+                                                                <img
+                                                                    class="card-img-top"
+                                                                    src="http://via.placeholder.com/350x250"
+                                                                    alt="louies secondary marks"
+                                                                />
+                                                            </a>
+                                                            <div
+                                                                class="card-body py-2 text-center"
+                                                            >
+                                                                <h5
+                                                                    class="card-title hover-state font-14 fw-500 mb-2"
+                                                                >
+                                                                    <a
+                                                                        class="title"
+                                                                        href="#"
+                                                                    >
+                                                                        <span
+                                                                            >Shot
+                                                                            Title</span
+                                                                        >
+                                                                    </a>
+                                                                </h5>
+                                                                <p
+                                                                    class="card-text font-12 fw-400"
+                                                                >
+                                                                    <a href="#">
+                                                                        <span
+                                                                            >8
+                                                                            hrs
+                                                                            ago</span
+                                                                        >
+                                                                    </a>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- ITEM -->
+                                                    <div class="card-outer">
+                                                        <div class="card">
+                                                            <a href="#">
+                                                                <img
+                                                                    class="card-img-top"
+                                                                    src="http://via.placeholder.com/350x250"
+                                                                    alt="louies secondary marks"
+                                                                />
+                                                            </a>
+                                                            <div
+                                                                class="card-body py-2 text-center"
+                                                            >
+                                                                <h5
+                                                                    class="card-title hover-state font-14 fw-500 mb-2"
+                                                                >
+                                                                    <a
+                                                                        class="title"
+                                                                        href="#"
+                                                                    >
+                                                                        <span
+                                                                            >Shot
+                                                                            Title</span
+                                                                        >
+                                                                    </a>
+                                                                </h5>
+                                                                <p
+                                                                    class="card-text font-12 fw-400"
+                                                                >
+                                                                    <a href="#">
+                                                                        <span
+                                                                            >8
+                                                                            hrs
+                                                                            ago</span
+                                                                        >
+                                                                    </a>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- ITEM -->
+                                                    <div class="card-outer">
+                                                        <div class="card">
+                                                            <a href="#">
+                                                                <img
+                                                                    class="card-img-top"
+                                                                    src="http://via.placeholder.com/350x250"
+                                                                    alt="louies secondary marks"
+                                                                />
+                                                            </a>
+                                                            <div
+                                                                class="card-body py-2 text-center"
+                                                            >
+                                                                <h5
+                                                                    class="card-title hover-state font-14 fw-500 mb-2"
+                                                                >
+                                                                    <a
+                                                                        class="title"
+                                                                        href="#"
+                                                                    >
+                                                                        <span
+                                                                            >Shot
+                                                                            Title</span
+                                                                        >
+                                                                    </a>
+                                                                </h5>
+                                                                <p
+                                                                    class="card-text font-12 fw-400"
+                                                                >
+                                                                    <a href="#">
+                                                                        <span
+                                                                            >8
+                                                                            hrs
+                                                                            ago</span
+                                                                        >
+                                                                    </a>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- ITEM -->
+                                                    <div class="card-outer">
+                                                        <div class="card">
+                                                            <a href="#">
+                                                                <img
+                                                                    class="card-img-top"
+                                                                    src="http://via.placeholder.com/350x250"
+                                                                    alt="louies secondary marks"
+                                                                />
+                                                            </a>
+                                                            <div
+                                                                class="card-body py-2 text-center"
+                                                            >
+                                                                <h5
+                                                                    class="card-title hover-state font-14 fw-500 mb-2"
+                                                                >
+                                                                    <a
+                                                                        class="title"
+                                                                        href="#"
+                                                                    >
+                                                                        <span
+                                                                            >Shot
+                                                                            Title</span
+                                                                        >
+                                                                    </a>
+                                                                </h5>
+                                                                <p
+                                                                    class="card-text font-12 fw-400"
+                                                                >
+                                                                    <a href="#">
+                                                                        <span
+                                                                            >8
+                                                                            hrs
+                                                                            ago</span
+                                                                        >
+                                                                    </a>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- ITEM -->
+                                                    <div class="card-outer">
+                                                        <div class="card">
+                                                            <a href="#">
+                                                                <img
+                                                                    class="card-img-top"
+                                                                    src="http://via.placeholder.com/350x250"
+                                                                    alt="louies secondary marks"
+                                                                />
+                                                            </a>
+                                                            <div
+                                                                class="card-body py-2 text-center"
+                                                            >
+                                                                <h5
+                                                                    class="card-title hover-state font-14 fw-500 mb-2"
+                                                                >
+                                                                    <a
+                                                                        class="title"
+                                                                        href="#"
+                                                                    >
+                                                                        <span
+                                                                            >Shot
+                                                                            Title</span
+                                                                        >
+                                                                    </a>
+                                                                </h5>
+                                                                <p
+                                                                    class="card-text font-12 fw-400"
+                                                                >
+                                                                    <a href="#">
+                                                                        <span
+                                                                            >8
+                                                                            hrs
+                                                                            ago</span
+                                                                        >
+                                                                    </a>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- END SLICK CAROUSEL -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- End Wrapper -->
+
+        <!-- Footer -->
+        <footer class="fixed-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-4">
+                        <div class="footer-links font-12 fw-300;">
+                            <a href="#">Privacy</a>
+                            <span>/</span>
+                            <a href="#">Terms and Conditions</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <p class="font-14 fw-300">
+                            © 2018 Project. All rights reserved.
+                        </p>
+                    </div>
+                    <div class="col-md-4 text-right">
+                        <div class="footer-social">
+                            <a href="#" title="Facebook">
+                                <i class="fab fa-facebook-square"></i>
+                            </a>
+                            <a href="#" title="twitter">
+                                <i class="fab fa-twitter-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer -->
+
+        <!-- jQuery first then Bootstrap JS and other JS files -->
+        <script src="assets/js/jquery-3.3.1.min.js"></script>
+        <script src="assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/lib/slick/js/slick.min.js"></script>
+        <script src="assets/js/script.js"></script>
+    </body>
+</html>
